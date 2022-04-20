@@ -11,10 +11,11 @@
 
   font-family: cursive;
 
-  background-image: url(img/charcoal.jpg);
-  
-  background-attachment: fixed;
-  background-size: 100%;
+  background: url(img/ocean.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   
 }
 
@@ -38,7 +39,7 @@
   color:var(--co-color-);
 }
 
-#nav_right {
+.nav_right {
   width: 8%;
   height: 100%;
 
@@ -56,35 +57,35 @@
   align-items:center;
 }
 
-#nav_right a {
+.nav_right a {
   margin: auto;
 }
 
-#nav_right img{
+.nav_right img{
   max-width: 20%;
   margin: auto;
 }
 
-#nav_right div {
+.nav_right div {
   width: 80%;
   height: 50%;
   border: solid var(--border-color-);
   margin: auto;
 }
 
-#nav_right div p{
+.nav_right div p{
   text-align: center;
   margin-bottom: 5%;
 
 }
 
-#nav_right a img{
+.nav_right a img{
   max-width: 60%;
   margin-left: 20%;
   margin-bottom: 30%;
 }
 
-#nav_left {
+.nav_left {
   width: 8%;
   height: 100%;
 
@@ -102,7 +103,7 @@
   justify-items: center;
 }
 
-#home {
+.home {
   width: 100%;
   height: 100%;
   display: flex;
@@ -110,7 +111,7 @@
   justify-self: center;
 }
 
-#statue {
+.statue {
   width: 60%;
   height: 100%;
 
@@ -122,7 +123,7 @@
   margin: 0% 5% 0% 10%;
 }
 
-#statue_grid {
+.statue_grid {
   width: 100%;
   height: 100%;
 
@@ -131,14 +132,14 @@
   grid-template-rows: repeat(3, 1fr);
 }
 
-#statue h3 {
+.statue h3 {
   text-align: center;
   margin: 3% 3% 3% 3%;
   padding-bottom: 3%;
   border-bottom: solid var(--border-color-);
 }
 
-#statue p {
+.statue p {
   justify-self: center;
 }
 .statue_img {
@@ -149,7 +150,7 @@
   justify-self: center;
 }
 
-#profile {
+.profile {
   width: 26%;
   height: 100%;
 
@@ -161,33 +162,29 @@
   margin: auto 10% auto auto;
 }
 
-#profile img {
+.profile img {
   justify-self: center;
   margin: 3% 3% 3% 3%;
 
   max-width: 75%;
 }
 
-#profile p {
+.profile p {
   text-align: center;
   border-top: solid var(--border-color-);
   margin: 1% 1% 1% 1%;
   padding-top: 2%;
 }
 
-#competence {
-  width: 85.8%;
-  height: 100%;
-  margin-left: 7.2%;
+.competence {
+  margin: 5% 10% 10% 10%;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
-#competence div {
-  width: 80%;
-  height: 80%;
+.competence div {
 
   justify-self: center;
 
@@ -197,7 +194,7 @@
   margin: 5%;
 }
 
-#competence div h3 {
+.competence div h3 {
   text-align: center;
 
   border-bottom: solid var(--border-color-);
@@ -206,44 +203,45 @@
   padding: 2%;
 }
 
-#competence div grid {
-  width: 100%;
-  height: 100%;
+.competence ul
+{
+  list-style: none;
+}
 
+.competence ul li
+{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
 }
 
-#competence div grid h4 {
-  justify-self: center;
-  text-align: center;
-
-  border-right: solid var(--border-color-);
-
-  padding-right: 10%;
+.competence ul li p
+{
+  padding: 5%;
 }
 
-#competence div grid progress {
-  justify-self: center;
-
-  margin: auto 10% auto auto;
+.competence ul li separator
+{
+  border: solid black 1px;
+  margin: 5% 0 5% 0;
 }
 
 .project {
-  width: 80%;
-  height: 100%;
   margin: 5% 10% 10% 10%;
-  display: flex;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
+
 }
 .project_description {
-  width: 30%;
+
+
 
   border: solid var(--border-color-);
   background-color: var(--box-background-);
 
-  flex: right;
-  margin-right: 8%;
+  width: 95%;
 }
 
 .project_description h3 {
@@ -262,7 +260,7 @@
 }
 
 .project_img {
-  width: 70%;
+  width: 95%;
 
   border: solid var(--border-color-);
   background-color: var(--box-background-);
@@ -276,4 +274,34 @@
 
 .project_img h3 {
   text-align: center;
+}
+
+.contact{
+  margin: 5% 10% 10% 10%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+
+.contact div{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-items: center;
+
+  margin: 5%;
+  
+}
+.contact div p{
+  width: 100%;
+  height: 70%;
+
+  border: solid var(--border-color-);
+  background-color: var(--box-background-);
+}
+
+.contact div img{
+  width: 100%;
+  border-radius: 15%;
 }
