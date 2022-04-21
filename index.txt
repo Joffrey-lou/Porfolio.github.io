@@ -186,7 +186,7 @@
     </section>
     <section class="project">
       <div class="project_description">
-        <h3>Porfolio Web</h3>
+        <h3>Project Name</h3>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
           cumque quo optio aut, commodi unde eius numquam fuga itaque voluptas
@@ -199,13 +199,13 @@
           explicabo est minus. Modi, enim?
         </p>
       </div>
-      <div class="project_box">
-        <p> <input type="button" value="click me" onclick="changeText()"> </p>
+      <div class="project_img">
+        <button>Click me</button>
         <div id="list">
           <p>
             <iframe 
               id="code"
-              src="index.txt"
+              src="javascrypt.js"
               frameborder="0"
               height="400"
               width="95%"
@@ -233,7 +233,7 @@
           explicabo est minus. Modi, enim?
         </p>
       </div>
-      <div class="project_box">
+      <div class="project_img">
         <img src="img/bob.jpg" />
 
         <h3>Description</h3>

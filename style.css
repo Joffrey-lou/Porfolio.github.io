@@ -11,6 +11,7 @@
 
   font-family: cursive;
 
+
   background: url(img/ocean.gif) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -22,6 +23,8 @@
 * {
   color: white;
 }
+
+/* JAVASCRYPT ID */
 
 #hm{
   color:var(--hm-color-);
@@ -37,6 +40,9 @@
 }
 #co{
   color:var(--co-color-);
+}
+
+#list{
 }
 
 .nav_right {
@@ -177,7 +183,7 @@
 }
 
 .competence {
-  margin: 5% 10% 10% 10%;
+  margin: auto 10% auto 10%;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -186,7 +192,7 @@
 
 .competence div {
 
-  justify-self: center;
+ 
 
   border: solid var(--border-color-);
   background-color: var(--box-background-);
@@ -235,9 +241,6 @@
 
 }
 .project_description {
-
-
-
   border: solid var(--border-color-);
   background-color: var(--box-background-);
 
@@ -259,21 +262,25 @@
   border: solid var(--border-color-);
 }
 
-.project_img {
+.project_box {
   width: 95%;
 
   border: solid var(--border-color-);
   background-color: var(--box-background-);
+
 }
 
-.project_img img {
-  margin-left: 10%;
-  max-width: 90%;
-  max-height: 8 0;
+.project_box iframe{
+  margin-left: %;
 }
 
-.project_img h3 {
+.project_box h3 {
   text-align: center;
+
+  border-top: solid var(--border-color-);
+
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .contact{

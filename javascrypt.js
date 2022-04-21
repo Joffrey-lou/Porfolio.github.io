@@ -1,16 +1,17 @@
 var r = document.querySelector(":root");
 var position = 0;
+let counter = 1;
 
 window.addEventListener("scroll", (event) => {
   let scroll = this.scrollY;
 
-  if (scroll <= 450) {
+  if (scroll <= 500) {
     position = 0;
-  } else if (scroll <= 900) {
+  } else if (scroll <= 1300) {
     position = 1;
-  } else if (scroll <= 1350) {
+  } else if (scroll <= 1600) {
     position = 2;
-  } else if (scroll <= 1800) {
+  } else if (scroll <= 2200) {
     position = 3;
   } else if (scroll <= 2250) {
     position = 4;
@@ -50,4 +51,20 @@ function Define(p1) {
 function Setcolor(p1,p2) {
  // colore la variables écrite en paramètre 1 et lui assigne la couleur passée en paramètre 2.
   r.style.setProperty(p1, p2);
+}
+
+function changeText(){
+  counter++;
+  switch (counter) {    
+    case 1:
+      document.getElementById('code').src="index.txt";
+      break;
+    case 2:
+      document.getElementById('code').src="style.css";
+      break;
+    case 3:
+      document.getElementById('code').src="javascrypt.js";
+      counter = 0;
+      break;
+  }
 }
