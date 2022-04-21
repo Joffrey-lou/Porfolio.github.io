@@ -57,7 +57,7 @@ function changeText(){
   counter++;
   switch (counter) {    
     case 1:
-      document.getElementById('code').src="index.txt";
+      document.getElementById('code').src="html.txt";
       break;
     case 2:
       document.getElementById('code').src="style.css";

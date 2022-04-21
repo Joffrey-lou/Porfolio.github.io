@@ -205,7 +205,7 @@
           <p>
             <iframe 
               id="code"
-              src="html.txt"
+              src="index.txt"
               frameborder="0"
               height="400"
               width="95%"
