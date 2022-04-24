@@ -2,6 +2,7 @@ var r = document.querySelector(":root");
 var position = 0;
 let counter = 1;
 
+// defini la section ou se trouve l'utilisateur
 window.addEventListener("scroll", (event) => {
   let scroll = this.scrollY;
 
@@ -21,8 +22,8 @@ window.addEventListener("scroll", (event) => {
   Define(position);
 });
 
+// Définie les changements de couleurs selon la valeur du paramètre 1
 function Define(p1) {
-    // Définie les changements de couleurs selon la valeur du paramètre 1
     Setcolor("--hm-color-","white");
     Setcolor("--cp-color-","white");
     Setcolor("--p1-color-","white");
@@ -48,23 +49,37 @@ function Define(p1) {
   }
 }
 
-function Setcolor(p1,p2) {
+
  // colore la variables écrite en paramètre 1 et lui assigne la couleur passée en paramètre 2.
+function Setcolor(p1,p2) {
   r.style.setProperty(p1, p2);
 }
 
+
+// affiche les diferrent fichier html/css/javascrypt dans las section project 1
 function changeText(){
   counter++;
   switch (counter) {    
     case 1:
       document.getElementById('code').src="html.txt";
+      document.getElementById('change_txt').value="CSS";
+      document.getElementById('change_txt').style.backgroundColor="cornflowerblue";
       break;
     case 2:
       document.getElementById('code').src="style.css";
+      document.getElementById('change_txt').value="Javascrypt";
+      document.getElementById('change_txt').style.backgroundColor="green";
       break;
     case 3:
       document.getElementById('code').src="javascrypt.js";
+      document.getElementById('change_txt').value="HTML";
+      document.getElementById('change_txt').style.backgroundColor="orange";
+      
       counter = 0;
       break;
   }
+}
+
+function design_4(){
+  r.style.backgroundImage ="url('img/ocean.gif')","no-repeat","center","fixed";
 }

@@ -18,9 +18,7 @@
       <a id="p1"> Project 1 </a>
       <a id="p2"> Project 2 </a>
       <a id="co"> Contact </a>
-      <a
-        href="https://drive.google.com/file/d/1T_dZoNlN993i3Zgl9xnAnjz3nq6Ii9MS/view?usp=sharing"
-      >
+      <a href="showpdf.html">
         <img src="img/cv.png" />
       </a>
     </section>
@@ -31,7 +29,7 @@
       <p>Charcoal</p>
       <p>Coral</p>
       <p>Aether</p>
-      <p>Glass</p>
+      <input type="button" value="Glass" onclick="design_4()" />
     </section>
 
     <! SECTION HOME _>
@@ -48,7 +46,7 @@
         </div>
       </div>
       <div class="profile">
-        <img src="img/picture.png" />
+          <img src="img/bob.jpg" />
         <p>Joffrey-Lou Gingras</p>
       </div>
     </section>
@@ -200,17 +198,23 @@
         </p>
       </div>
       <div class="project_box">
-        <p> <input type="button" value="click me" onclick="changeText()"> </p>
+        <p>
+          Cliquer pour voir le text en :
+          <input
+            type="button"
+            value="css"
+            onclick="changeText()"
+            id="change_txt"
+          />
+        </p>
         <div id="list">
-          <p>
-            <iframe 
-              id="code"
-              src="html.txt"
-              frameborder="0"
-              height="400"
-              width="95%"
-            ></iframe>
-          </p>
+          <iframe
+            id="code"
+            src="html.txt"
+            frameborder="0"
+            height="400"
+            width="95%"
+          ></iframe>
         </div>
         <h3>Description</h3>
       </div>
