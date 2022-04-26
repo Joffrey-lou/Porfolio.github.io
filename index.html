@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" href="img/icon/Logo.gif" type="image/icon type" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="style.css" />
@@ -11,42 +12,82 @@
   <body>
     <! NAV RIGHT _>
     <section class="nav_right">
-      <img src="img/en.png" />
-      <img src="img/fr.png" />
+      <img src="img/flag/en.png" />
+      <img src="img/flag/fr.png" />
       <a id="hm"> Home </a>
       <a id="cp"> Competence </a>
       <a id="p1"> Project 1 </a>
       <a id="p2"> Project 2 </a>
       <a id="co"> Contact </a>
       <a href="showpdf.html">
-        <img src="img/cv.png" />
+        <img src="img/icon/pdf_download_button.gif" />
       </a>
     </section>
 
     <!NAV LEFT _>
     <section class="nav_left">
       <p>Design Selector</p>
-      <p>Charcoal</p>
-      <p>Coral</p>
-      <p>Aether</p>
-      <input type="button" value="Glass" onclick="design_4()" />
+      <ul>
+        <li>
+          <button
+            onclick="design_0()"
+            style="
+              background: url(img/background/background_0.jpg) no-repeat;
+              background-size: contain;
+            "
+          ></button>
+        </li>
+        <li>
+          <button
+            onclick="design_1()"
+            style="
+              background: url(img/background/background_1.jpg) no-repeat;
+              background-size: contain;
+            "
+          ></button>
+        </li>
+        <li>
+          <button
+            onclick="design_2()"
+            style="
+              background: url(img/background/background_2.jpg) no-repeat;
+              background-size: contain;
+            "
+          ></button>
+        </li>
+        <li>
+          <button
+            onclick="design_3()"
+            style="
+              background: url(img/background/background_3.jpg) no-repeat;
+              background-size: contain;
+            "
+          ></button>
+        </li>
+      </ul>
     </section>
 
     <! SECTION HOME _>
     <section class="home">
       <div class="statue">
         <h3>Statue D'emploie</h3>
-        <div class="statue_grclass">
-          <p class="statue_p">Competence</p>
-          <img class="statue_img" src="img/c++.png" />
-          <p class="statue_p">Competence</p>
-          <img class="statue_img" src="img/html.png" />
-          <p class="statue_p">Competence</p>
-          <img class="statue_img" src="img/css.png" />
-        </div>
+        <ul>
+          <li>
+            <p class="statue_p">Competence</p>
+            <img src="img/icon/css.png" />
+          </li>
+          <li>
+            <p class="statue_p">Competence</p>
+            <img src="img/icon/html.png" />
+          </li>
+          <li>
+            <p class="statue_p">Competence</p>
+            <img src="img/icon/c++.png" />
+          </li>
+        </ul>
       </div>
       <div class="profile">
-          <img src="img/bob.jpg" />
+        <img src="img/profile_picture.png" />
         <p>Joffrey-Lou Gingras</p>
       </div>
     </section>
@@ -214,6 +255,7 @@
             frameborder="0"
             height="400"
             width="95%"
+            style="background-color: rgba(179, 179, 179, 0.397)"
           ></iframe>
         </div>
         <h3>Description</h3>
@@ -238,7 +280,7 @@
         </p>
       </div>
       <div class="project_box">
-        <img src="img/bob.jpg" />
+        <img src="img/project_1.png" />
 
         <h3>Description</h3>
       </div>

@@ -1,6 +1,8 @@
 var r = document.querySelector(":root");
 var position = 0;
-let counter = 1;
+let pos = 1;
+let hrElement;
+let counter = 100;
 
 // defini la section ou se trouve l'utilisateur
 window.addEventListener("scroll", (event) => {
@@ -17,69 +19,90 @@ window.addEventListener("scroll", (event) => {
   } else if (scroll <= 2250) {
     position = 4;
   }
-
-  
   Define(position);
 });
 
 // Définie les changements de couleurs selon la valeur du paramètre 1
 function Define(p1) {
-    Setcolor("--hm-color-","white");
-    Setcolor("--cp-color-","white");
-    Setcolor("--p1-color-","white");
-    Setcolor("--p2-color-","white");
-    Setcolor("--co-color-","white");
+  setParameter("--hm-color-", "white");
+  setParameter("--cp-color-", "white");
+  setParameter("--p1-color-", "white");
+  setParameter("--p2-color-", "white");
+  setParameter("--co-color-", "white");
 
   switch (p1) {
     case 0:
-      Setcolor("--hm-color-","yellow");
+      setParameter("--hm-color-", "yellow");
       break;
     case 1:
-      Setcolor("--cp-color-","yellow");
+      setParameter("--cp-color-", "yellow");
       break;
     case 2:
-      Setcolor("--p1-color-","yellow");
+      setParameter("--p1-color-", "yellow");
       break;
     case 3:
-      Setcolor("--p2-color-","yellow");
+      setParameter("--p2-color-", "yellow");
       break;
     case 4:
-      Setcolor("--co-color-","yellow");
+      setParameter("--co-color-", "yellow");
       break;
   }
 }
 
-
- // colore la variables écrite en paramètre 1 et lui assigne la couleur passée en paramètre 2.
-function Setcolor(p1,p2) {
+// colore la variables écrite en paramètre 1 et lui assigne la valeur passée en paramètre 2.
+function setParameter(p1, p2) {
   r.style.setProperty(p1, p2);
 }
 
-
 // affiche les diferrent fichier html/css/javascrypt dans las section project 1
-function changeText(){
+function changeText() {
   counter++;
-  switch (counter) {    
+  switch (pos) {
     case 1:
-      document.getElementById('code').src="html.txt";
-      document.getElementById('change_txt').value="CSS";
-      document.getElementById('change_txt').style.backgroundColor="cornflowerblue";
+      document.getElementById("code").src = "html.txt";
+      document.getElementById("change_txt").value = "CSS";
+      document.getElementById("change_txt").style.backgroundColor ="cornflowerblue";
+      document.getElementById("code").contentWindow.document.body.style.color ="rgb(255, 184, 103)";
       break;
     case 2:
-      document.getElementById('code').src="style.css";
-      document.getElementById('change_txt').value="Javascrypt";
-      document.getElementById('change_txt').style.backgroundColor="green";
+      document.getElementById("code").src = "style.css";
+      document.getElementById("change_txt").value = "Javascrypt";
+      document.getElementById("change_txt").style.backgroundColor = "green";
+      document.getElementById("code").contentWindow.document.body.style.color ="cornflowerblue";
       break;
     case 3:
-      document.getElementById('code').src="javascrypt.js";
-      document.getElementById('change_txt').value="HTML";
-      document.getElementById('change_txt').style.backgroundColor="orange";
-      
-      counter = 0;
+      document.getElementById("code").src = "javascrypt.js";
+      document.getElementById("change_txt").value = "HTML";
+      document.getElementById("change_txt").style.backgroundColor = "orange";
+      document.getElementById("code").contentWindow.document.body.style.color ="green";
+      pos = 0;
       break;
   }
 }
 
-function design_4(){
-  r.style.backgroundImage ="url('img/ocean.gif')","no-repeat","center","fixed";
+function design_0() {
+  (r.style.backgroundImage = "url(img/background/background_0.jpg)"),"no-repeat","center","fixed";
+  setParameter("--border-color-", "white");
+  setParameter("--box-background-", "rgba(0, 0, 0, 0.823)");
+  setParameter("color", "white");
+  return;
+}
+function design_1() {
+  (r.style.backgroundImage = "url(img/background/background_1.jpg)"),"no-repeat","center","fixed";
+  setParameter("--border-color-", "rgb(136, 136, 231)");
+  setParameter("--box-background-", "rgba(153, 153, 153, 0.247)");
+  setParameter("color", "black");
+  return;
+}
+function design_2() {
+  (r.style.backgroundImage = "url(img/background/background_2.jpg)"),"no-repeat","center","fixed";
+  setParameter("--border-color-", "rgb(136, 136, 231)");
+  setParameter("--box-background-", "rgb(255, 184, 103)");
+  setParameter("color", "white");
+  return;
+}
+function design_3() {
+  (r.style.backgroundImage = "url(img/background/background_3.jpg)"),"no-repeat","center",
+"fixed";
+  return;
 }
