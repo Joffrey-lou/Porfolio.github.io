@@ -3,7 +3,7 @@
   --border-style-: double;
   --box-background-: rgba(0, 0, 0, 0.823);
 
---template: rgb(255, 184, 103);
+  --template: rgb(255, 184, 103);
 
   --div-space-: 3%;
 
@@ -12,10 +12,28 @@
   --p1-color-: white;
   --p2-color-: white;
   --co-color-: white;
-
-
   font-family: cursive;
 
+  /* grid */
+
+  --home-columns-: 2fr 1fr;
+  --home-rows-: 1fr;
+
+  --competence-columns-: 1fr 1fr 1fr;
+  --competence-rows-: 1fr 1fr;
+
+  --project-columns-: 1fr 2fr;
+  --project-rows-: 1fr;
+
+  --contact-columns-: 1fr 1fr 1fr;
+  --contact-rows-: 1fr 1fr;
+
+  --nav-left-visibility-: grid;
+  --nav-right-visibility-: grid;
+
+  --project-image-: url("img/horizontal_placeholder.jpeg");
+
+  --section-margin-: auto 10% 5% 10%;
 
   background: url(img/background/background_0.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -23,11 +41,146 @@
   -o-background-size: cover;
   background-size: cover;
   
-  color: white;
+  color: #975a21;
 }
 
+/*
+ * ------------------------------------------
+ *  Responsive Grid Media Queries - 1280, 1024, 768, 480
+ *   1280-1024   - desktop (default grid)
+ *   1024-768    - tablet landscape
+ *   768-480     - tablet 
+ *   480-less    - phone landscape & smaller
+ * --------------------------------------------
+ */
 
+ @media all and (min-width: 1024px) and (max-width: 1280px) {
+   :root {
+    --home-columns-: 2fr 1fr;
+    --home-rows-: 1fr;
 
+    --competence-columns-: 1fr 1fr 1fr;
+    --competence-rows-: 1fr 1fr;
+
+    --project-columns-: 1fr 2fr;
+    --project-rows-: 1fr;
+
+    --contact-columns-: 1fr 1fr 1fr;
+    --contact-rows-: 1fr 1fr;
+
+    --project-image-: url("img/horizontal_placeholder.jpeg");
+
+    --nav-left-visibility-: grid;
+    --nav-right-visibility-: grid;
+
+    --section-margin-: auto 10% 5% 10%; 
+   }
+  }
+
+ @media all and (min-width: 768px) and (max-width: 1024px) {
+  :root {
+    --home-columns-: 2fr 1fr;
+    --home-rows-: 1fr;
+
+    --competence-columns-: 1fr 1fr;
+    --competence-rows-: 1fr 1fr 1fr;
+
+    --project-columns-: 1fr 2fr;
+    --project-rows-: 1fr;
+
+    --contact-columns-: 1fr 1fr 1fr;
+    --contact-rows-: 1fr 1fr;
+
+    --project-image-: url("img/vertical_placeholder.png");
+
+    --nav-left-visibility-: none;
+    --nav-right-visibility-: grid;
+
+    --section-margin-: auto 0% 5% 10%; 
+   }
+  }
+ 
+ @media all and (min-width: 480px) and (max-width: 768px) {
+  :root {
+    --home-columns-: 1fr;
+    --home-rows-: 2fr;
+
+    --competence-columns-: 1fr 1fr ;
+    --competence-rows-: 1fr 1fr 1fr;
+
+    --project-columns-: 1fr;
+    --project-rows-: 1fr 1fr;
+
+    --contact-columns-: 1fr 1fr;
+    --contact-rows-: 1fr 1fr 1fr;
+
+    --project-image-: url("img/horizontal_placeholder.jpeg");
+
+    --nav-left-visibility-: none;
+    --nav-right-visibility-: none;
+
+    --section-margin-: auto 0% 5% 0%; 
+   }
+  }
+ 
+ @media all and (max-width: 480px) {
+  :root {
+    --home-columns-: 1fr;
+    --home-rows-: 2fr;
+
+    --competence-columns-: 1fr;
+    --competence-rows-: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    --project-columns-: 1fr;
+    --project-rows-: 1fr 1fr;
+
+    --contact-columns-: 1fr 1fr;
+    --contact-rows-: 1fr 1fr 1fr;
+
+    --project-image-: url("img/horizontal_placeholder.jpeg");
+
+    --nav-left-visibility-: none;
+    --nav-right-visibility-: none;
+
+    --section-margin-: auto 0% 5% 0%; 
+   }
+  }
+ 
+ 
+ /* Portrait */
+ @media screen and (orientation:portrait) { /* Portrait styles here */ }
+ /* Landscape */
+ @media screen and (orientation:landscape) { /* Landscape styles here */ }
+ 
+ 
+ /* CSS for iPhone, iPad, and Retina Displays */
+ 
+ /* Non-Retina */
+ @media screen and (-webkit-max-device-pixel-ratio: 1) {
+ }
+ 
+ /* Retina */
+ @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+ only screen and (-o-min-device-pixel-ratio: 3/2),
+ only screen and (min--moz-device-pixel-ratio: 1.5),
+ only screen and (min-device-pixel-ratio: 1.5) {
+ }
+ 
+ /* iPhone Portrait */
+ @media screen and (max-device-width: 480px) and (orientation:portrait) {
+ } 
+ 
+ /* iPhone Landscape */
+ @media screen and (max-device-width: 480px) and (orientation:landscape) {
+ }
+ 
+ /* iPad Portrait */
+ @media screen and (min-device-width: 481px) and (orientation:portrait) {
+ }
+ 
+ /* iPad Landscape */
+ @media screen and (min-device-width: 481px) and (orientation:landscape) {
+ }
 
 /* JAVASCRYPT ID */
 
@@ -65,7 +218,7 @@
   border-style: var(--border-style-);
   background: var(--box-background-);
 
-  display: grid;
+  display: var(--nav-right-visibility-);
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 2fr 2fr 2fr 2fr 2fr 8fr;
 
@@ -116,7 +269,7 @@
   background: var(--box-background-);
   border-style: var(--border-style-);
 
-  display: grid;
+  display: var(--nav-left-visibility-);
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
@@ -141,10 +294,11 @@ max-width: 100%;
 /* HOME SECTION */
 
 .home {
-  margin: auto 10% 5% 10%;
+  margin: var(--section-margin-);
 
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: var(--home-columns-);
+  grid-template-rows: var(--home-rows-);
   justify-items: center;
 }
 
@@ -205,11 +359,11 @@ max-width: 100%;
 /* COMPETENCE SECTION */
 
 .competence {
-  margin: auto 10% 5% 10%;
+  margin: var(--section-margin-);
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: var(--competence-columns-);
+  grid-template-rows: var(--competence-rows-);
 }
 
 .competence div {
@@ -254,10 +408,11 @@ max-width: 100%;
 /* PROJECT 1 & 2 SECTION */
 
 .project {
-  margin: auto 10% 5% 10%;
+  margin: var(--section-margin-);
 
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: var(--project-columns-);
+  grid-template-rows: var(--project-rows-);
   justify-items: center;
 
 }
@@ -311,6 +466,7 @@ max-width: 100%;
 .project_box img{
   margin: 5%;
   margin-left:12%;
+  content: var(--project-image-);
 }
 
 .project_box h3 {
@@ -325,11 +481,11 @@ max-width: 100%;
 /* CONTACT SECTION */
 
 .contact{
-  margin: auto 10% auto 10%;
+  margin: var(--section-margin-);
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: var(--contact-columns-);
+  grid-template-rows: var(--contact-rows-);
   justify-items: center;
 }
 
@@ -339,12 +495,11 @@ max-width: 100%;
   justify-items: center;
 
   margin: 15% 5% 5% 5%;
-  
+  align-items: center;
 }
-.contact div p{
+.contact div form{
   width: 100%;
-  height: auto;
-
+  height: 40%;
   border: solid var(--border-color-);
   border-style: var(--border-style-);
   background: var(--box-background-);

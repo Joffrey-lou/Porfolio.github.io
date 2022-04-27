@@ -1,6 +1,6 @@
+
 var r = document.querySelector(":root");
 var position = 0;
-let pos = 1;
 let hrElement;
 let counter = 100;
 
@@ -54,28 +54,27 @@ function setParameter(p1, p2) {
   r.style.setProperty(p1, p2);
 }
 
+let cycle = 1;
+
 // affiche les diferrent fichier html/css/javascrypt dans las section project 1
 function changeText() {
-  counter++;
-  switch (pos) {
+  cycle++;
+  switch (cycle) {
     case 1:
       document.getElementById("code").src = "html.txt";
       document.getElementById("change_txt").value = "CSS";
       document.getElementById("change_txt").style.backgroundColor ="cornflowerblue";
-      document.getElementById("code").contentWindow.document.body.style.color ="rgb(255, 184, 103)";
       break;
     case 2:
       document.getElementById("code").src = "style.css";
       document.getElementById("change_txt").value = "Javascrypt";
       document.getElementById("change_txt").style.backgroundColor = "green";
-      document.getElementById("code").contentWindow.document.body.style.color ="cornflowerblue";
       break;
     case 3:
       document.getElementById("code").src = "javascrypt.js";
       document.getElementById("change_txt").value = "HTML";
       document.getElementById("change_txt").style.backgroundColor = "orange";
-      document.getElementById("code").contentWindow.document.body.style.color ="green";
-      pos = 0;
+      cycle = null;
       break;
   }
 }
@@ -106,3 +105,4 @@ function design_3() {
 "fixed";
   return;
 }
+S
