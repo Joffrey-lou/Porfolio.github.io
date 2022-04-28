@@ -14,19 +14,19 @@
     <section class="nav_right">
       <ul>
         <li>
-          <a id="hm"> Home </a>
+          <a id="hm" href="#home"> Home </a>
         </li>
         <li>
-          <a id="cp"> Competence </a>
+          <a id="cp" href="#competence"> Competence</a>
         </li>
         <li>
-          <a id="p1"> Project 1 </a>
+          <a id="p1" href="#project_1"> Project 1 </a>
         </li>
         <li>
-          <a id="p2"> Project 2 </a>
+          <a id="p2" href="#project_2"> Project 2 </a>
         </li>
         <li>
-          <a id="co"> Contact </a>
+          <a id="co" href="#contact"> Contact </a>
         </li>
           <a href="showpdf.html">
             <img src="img/icon/pdf_download_button.gif" />
@@ -36,51 +36,27 @@
 
     <!----NAV LEFT -->
     <section class="nav_left">
-      <p>Design Selector</p>
+      <h2>Design Selector</h2>
       <ul>
         <li>
-          <button
-            onclick="design_0()"
-            style="
-              background: url(img/background/background_0.jpg) no-repeat;
-              background-size: contain;
-            "
-          ></button>
+          <input type="image" onclick="design_0()" src="img/background/background_0.jpg" />
         </li>
         <li>
-          <button
-            onclick="design_1()"
-            style="
-              background: url(img/background/background_1.jpg) no-repeat;
-              background-size: contain;
-            "
-          ></button>
+          <input type="image" onclick="design_1()" src="img/background/background_1.jpg" />
         </li>
         <li>
-          <button
-            onclick="design_2()"
-            style="
-              background: url(img/background/background_2.jpg) no-repeat;
-              background-size: contain;
-            "
-          ></button>
+          <input type="image" onclick="design_2()" src="img/background/background_2.jpg" />
         </li>
         <li>
-          <button
-            onclick="design_3()"
-            style="
-              background: url(img/background/background_3.jpg) no-repeat;
-              background-size: contain;
-            "
-          ></button>
+          <input type="image" onclick="design_3()" src="img/background/background_3.jpg" />
         </li>
       </ul>
     </section>
 
     <!-- SECTION HOME -->
-    <section class="home">
+    <section class="home" id="home">
       <div class="statue">
-        <h3>Statue D'emploie</h3>
+        <h3>Étudiant en technique informatique</h3>
         <ul>
           <li>
             <p class="statue_p">Competence</p>
@@ -97,29 +73,29 @@
         </ul>
       </div>
       <div class="profile">
-        <img src="img/profile_picture.png" />
+        <img src="img/profile_picture.png" class="center" />
         <p>Joffrey-Lou Gingras</p>
       </div>
     </section>
 
     <!-- SECTION COMPETENCE -->
-    <section class="competence">
+    <section class="competence" id="competence">
       <!-- BOITE 1 -->
       <div>
-        <h3>Lorem Ipsulum</h3>
+        <h3>Languages de programmation</h3>
         <ul>
           <li>
-            <p>Lorem Ipsulum</p>
+            <p>HTML</p>
             <separator></separator>
             <p>Lorem Ipsulum</p>
           </li>
           <li>
-            <p>Lorem Ipsulum</p>
+            <p>CSS</p>
             <separator></separator>
             <p>Lorem Ipsulum</p>
           </li>
           <li>
-            <p>Lorem Ipsulum</p>
+            <p>C++</p>
             <separator></separator>
             <p>Lorem Ipsulum</p>
           </li>
@@ -127,20 +103,20 @@
       </div>
       <!-- BOITE 2 -->
       <div>
-        <h3>Lorem Ipsulum</h3>
+        <h3>Système d'opération</h3>
         <ul>
           <li>
-            <p>Lorem Ipsulum</p>
+            <p>Windows</p>
             <separator></separator>
             <p>Lorem Ipsulum</p>
           </li>
           <li>
-            <p>Lorem Ipsulum</p>
+            <p>Android</p>
             <separator></separator>
             <p>Lorem Ipsulum</p>
           </li>
           <li>
-            <p>Lorem Ipsulum</p>
+            <p>Linux</p>
             <separator></separator>
             <p>Lorem Ipsulum</p>
           </li>
@@ -148,20 +124,20 @@
       </div>
       <!-- BOITE 3 -->
       <div>
-        <h3>Lorem Ipsulum</h3>
+        <h3>Logiciel</h3>
         <ul>
           <li>
-            <p>Lorem Ipsulum</p>
+            <p>Visual Studio</p>
             <separator></separator>
             <p>Lorem Ipsulum</p>
           </li>
           <li>
-            <p>Lorem Ipsulum</p>
+            <p>Github</p>
             <separator></separator>
             <p>Lorem Ipsulum</p>
           </li>
           <li>
-            <p>Lorem Ipsulum</p>
+            <p>Sublime-Text</p>
             <separator></separator>
             <p>Lorem Ipsulum</p>
           </li>
@@ -233,7 +209,7 @@
 
       <!-- SECTION PROJECT 1 -->
     </section>
-    <section class="project">
+    <section class="project" id="project_1">
       <div class="project_description">
         <h3>Porfolio Web</h3>
         <p>
@@ -269,12 +245,12 @@
             style="background-color: rgba(179, 179, 179, 0.397)"
           ></iframe>
         </div>
-        <h3>Description</h3>
+        <h3>Code CSS, HTML et Javascrypt utilisé pour la création du site.</h3>
       </div>
     </section>
 
     <!-- SECTION PROJECT 2 -->
-    <section class="project">
+    <section class="project" id="project_2">
       <div class="project_description">
         <h3>Project Name</h3>
         <p>
@@ -298,13 +274,13 @@
     </section>
 
     <!-- SECTION CONTACT -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <!-- SOCIAL 1 -->
       <div>
         <form
           action="https://www.facebook.com/people/Joffrey-lou-Gingras/100011561556361/"
         >
-          <input type="submit" value="Joffrey-lou-Gingras" />
+          <input type="submit" value="Joffrey-lou Gingras" />
         </form>
         <img src="img/contact/facebook.png" />
       </div>
@@ -317,8 +293,8 @@
       </div>
       <!-- SOCIAL 3 -->
       <div>
-        <form action="https://twitter.com/GingrasLou">
-          <input type="submit" value="https://twitter.com/GingrasLou" />
+        <form action="https://www.instagram.com/joffrey_lou_gingras/">
+          <input type="submit" value="joffrey_lou_gingras" />
         </form>
         <img src="img/contact/instagram.png" />
       </div>
@@ -341,10 +317,10 @@
       </div>
       <!-- SOCIAL 6 -->
       <div>
-        <form action="https://fr.linkedin.com">
-          <input type="submit" value="https://fr.linkedin.com" />
+        <form action="https://www.linkedin.com/in/joffrey-lou-gingras-371a6a238/">
+          <input type="submit" value="Joffrey-Lou Gingras" />
         </form>
-        <img src="img/contact/call.png" />
+        <img src="img/contact/linkedin.png" />
       </div>
     </section>
   </body>

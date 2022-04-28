@@ -10,13 +10,13 @@ window.addEventListener("scroll", (event) => {
 
   if (scroll <= 500) {
     position = 0;
-  } else if (scroll <= 1300) {
+  } else if (scroll <= 1000) {
     position = 1;
-  } else if (scroll <= 1600) {
+  } else if (scroll <= 2000) {
     position = 2;
-  } else if (scroll <= 2200) {
+  } else if (scroll <= 2400) {
     position = 3;
-  } else if (scroll <= 2250) {
+  } else if (scroll <= 2600) {
     position = 4;
   }
   Define(position);
@@ -81,28 +81,38 @@ function changeText() {
 
 function design_0() {
   (r.style.backgroundImage = "url(img/background/background_0.jpg)"),"no-repeat","center","fixed";
+  setParameter("--border-color-", "green");
+  setParameter("--box-background-", "rgba(0, 0, 0,0.4)");
+  setParameter("color", "white");
+  setParameter("--animation-name-", "none");
+  return;
+}
+
+function design_1() {
+   (r.style.backgroundImage = "url(img/background/background_1.jpg)"),"no-repeat","center","fixed";
+   setParameter("--border-color-", "rgb(136, 136, 231)");
+   setParameter("--box-background-", "rgba(153, 153, 153, 0.247)");
+   setParameter("color", "black");
+   setParameter("--animation-name-", "none");
+  return;
+}
+
+function design_2() {
+  (r.style.backgroundImage = "url(img/background/background_2.jpg)"),"no-repeat","center","fixed";
   setParameter("--border-color-", "white");
   setParameter("--box-background-", "rgba(0, 0, 0, 0.823)");
   setParameter("color", "white");
+  setParameter("--animation-name-", "none");
   return;
 }
-function design_1() {
-  (r.style.backgroundImage = "url(img/background/background_1.jpg)"),"no-repeat","center","fixed";
-  setParameter("--border-color-", "rgb(136, 136, 231)");
-  setParameter("--box-background-", "rgba(153, 153, 153, 0.247)");
-  setParameter("color", "black");
-  return;
-}
-function design_2() {
-  (r.style.backgroundImage = "url(img/background/background_2.jpg)"),"no-repeat","center","fixed";
-  setParameter("--border-color-", "rgb(136, 136, 231)");
-  setParameter("--box-background-", "rgb(255, 184, 103)");
-  setParameter("color", "white");
-  return;
-}
+
+
+
 function design_3() {
-  (r.style.backgroundImage = "url(img/background/background_3.jpg)"),"no-repeat","center",
-"fixed";
+  (r.style.backgroundImage = "url(img/background/background_3.jpg)"),"no-repeat","center","fixed";
+  setParameter("--border-color-", "white");
+  setParameter("--box-background-", "rgba(0, 0, 0, 0.223)");
+  setParameter("color", "white");
+  setParameter("--animation-name-", "neon");
   return;
 }
-S
