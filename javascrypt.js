@@ -83,7 +83,7 @@ function design_0() {
   (r.style.backgroundImage = "url(img/background/background_0.jpg)"),"no-repeat","center","fixed";
   setParameter("--border-color-", "green");
   setParameter("--box-background-", "rgba(0, 0, 0,0.4)");
-  setParameter("color", "white");
+  setParameter("--text-color-", "white");
   setParameter("--animation-name-", "none");
   return;
 }
@@ -92,7 +92,7 @@ function design_1() {
    (r.style.backgroundImage = "url(img/background/background_1.jpg)"),"no-repeat","center","fixed";
    setParameter("--border-color-", "rgb(136, 136, 231)");
    setParameter("--box-background-", "rgba(153, 153, 153, 0.247)");
-   setParameter("color", "black");
+   setParameter("--text-color-", "black");
    setParameter("--animation-name-", "none");
   return;
 }
@@ -101,7 +101,7 @@ function design_2() {
   (r.style.backgroundImage = "url(img/background/background_2.jpg)"),"no-repeat","center","fixed";
   setParameter("--border-color-", "white");
   setParameter("--box-background-", "rgba(0, 0, 0, 0.823)");
-  setParameter("color", "white");
+  setParameter("--text-color-", "white");
   setParameter("--animation-name-", "none");
   return;
 }
@@ -112,7 +112,7 @@ function design_3() {
   (r.style.backgroundImage = "url(img/background/background_3.jpg)"),"no-repeat","center","fixed";
   setParameter("--border-color-", "white");
   setParameter("--box-background-", "rgba(0, 0, 0, 0.223)");
-  setParameter("color", "white");
+  setParameter("--text-color-", "white");
   setParameter("--animation-name-", "neon");
   return;
 }
