@@ -1,4 +1,3 @@
-
 var r = document.querySelector(":root");
 var position = 0;
 let hrElement;
@@ -66,12 +65,12 @@ function changeText() {
       document.getElementById("change_txt").style.backgroundColor ="cornflowerblue";
       break;
     case 2:
-      document.getElementById("code").src = "style.css";
-      document.getElementById("change_txt").value = "Javascrypt";
+      document.getElementById("code").src = "css/style.css";
+      document.getElementById("change_txt").value = "Javascript";
       document.getElementById("change_txt").style.backgroundColor = "green";
       break;
     case 3:
-      document.getElementById("code").src = "javascrypt.js";
+      document.getElementById("code").src = "scrypt/javascript.js";
       document.getElementById("change_txt").value = "HTML";
       document.getElementById("change_txt").style.backgroundColor = "orange";
       cycle = null;
@@ -105,8 +104,6 @@ function design_2() {
   setParameter("--animation-name-", "none");
   return;
 }
-
-
 
 function design_3() {
   (r.style.backgroundImage = "url(img/background/background_3.jpg)"),"no-repeat","center","fixed";

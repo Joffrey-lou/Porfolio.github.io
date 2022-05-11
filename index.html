@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Porfolio Web</title>
     <link rel="icon" href="img/icon/Logo.gif" type="image/icon type" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/font/stylesheet.css" />
-    <title>Porfolio Web</title>
-    <script src="javascrypt.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="scrypt/javascript.js"></script>
   </head>
   <body>
-    <!-- NAV RIGHT -->
-    <section class="nav_right">
+    <!-- NAV -->
+    <section class="nav">
       <ul>
         <li>
-          <a id="hm" href="#home"> Home </a>
+          <a id="hm" onclick="window.scrollTo(0,0)"> Home </a>
         </li>
         <li>
-          <a id="cp" href="#competence"> Competence</a>
+          <a id="cp" onclick="window.scrollTo(0,800)"> Competence</a>
         </li>
         <li>
-          <a id="p1" href="#project_1"> Project 1 </a>
+          <a id="p1" onclick="window.scrollTo(0,1500)"> Project 1 </a>
         </li>
         <li>
-          <a id="p2" href="#project_2"> Project 2 </a>
+          <a id="p2" onclick="window.scrollTo(0,2200)"> Project 2 </a>
         </li>
         <li>
-          <a id="co" href="#contact"> Contact </a>
+          <a id="co" onclick="window.scrollTo(0,2700)"> Contact </a>
         </li>
-          <a href="showpdf.html">
-            <img src="img/icon/pdf_download_button.gif" />
-          </a>
       </ul>
     </section>
 
-    <!----NAV LEFT -->
-    <section class="nav_left">
+    <!----DESIGN SELECTOR -->
+    <section class="design_selector" id="slide">
       <h2>Design Selector</h2>
       <ul>
         <li>
@@ -50,11 +46,16 @@
         <li>
           <input type="image" onclick="design_3()" src="img/background/background_3.jpg" />
         </li>
-      </ul>
+      </ul> 
+      <div class="triangle"></div>
     </section>
 
     <!-- SECTION HOME -->
     <section class="home" id="home">
+      <div class="profile">
+        <img src="img/profile_picture.png" class="center" />
+        <p>Joffrey-Lou Gingras</p>
+      </div>
       <div class="statue">
         <h3>Étudiant en technique informatique</h3>
         <grid>
@@ -65,10 +66,6 @@
           <h2> Other </h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsa hic cupiditate illum! Aliquid fuga accusamus architecto, maxime hic quam asperiores odit eum sapiente, distinctio vitae, soluta pariatur eos inventore?</p>
        </div>
-      <div class="profile">
-        <img src="img/profile_picture.png" class="center" />
-        <p>Joffrey-Lou Gingras</p>
-      </div>
     </grid>
     </section>
 
@@ -203,7 +200,7 @@
 
       <!-- SECTION PROJECT 1 -->
     </section>
-    <section class="project" id="project_1">
+    <section class="project project_1">
       <div class="project_description">
         <h3>Porfolio Web</h3>
         <p>
@@ -244,25 +241,31 @@
     </section>
 
     <!-- SECTION PROJECT 2 -->
-    <section class="project" id="project_2">
+    <section class="project project_2">
       <div class="project_description">
-        <h3>Project Name</h3>
+        <h3>Where am I going?</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quasi,
-          ipsa, velit minima quis consequatur suscipit reiciendis sequi,
-          eligendi iste ullam minus odit incclassunt magnam possimus et
-          molestiae exercitationem! Deleniti.
+          Débuter le 27 avril 2022, Where am I going est un project personnel développé sur la platforme 
+          <a style="color: yellow" href="https://replit.com/@Joffrey-lou"> Replit.</a>, en javascript,
+           à l'aide de la libraire <a style="color: yellow" href="https://Kaboom.js"> Kaboom</a>.
+          Le project consiste, d'un platformer roguelike oû le joueur incarne un personage dont le
+          seul moyen de locomotion est un ressort. Il ne pourras donc, se diriger que lorsqu'il se situe dans les air.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
-          pariatur! Autem sit a facilis doloribus accusantium, voluptatum
-          consectetur vero! Aperiam mollitia commodi sequi rem consequatur
-          explicabo est minus. Modi, enim?
+          Le project â été conceptualiser amis sur la platforme 
+          <a style="color: yellow" href="https://miro.com/app/board/uXjVO3NNQjQ=/?share_link_id=347656176074"> Miro</a>
+          . Le scrypt, lui, a été créez par moi même et un amis, en se basant sur la documentation Kaboom. J'ai concu les musiques sur
+          <a style="color: yellow" href="https://musiclab.chromeexperiments.com/Song-Maker/"> Musiclab</a>, et les effets sonores
+          sur [placeHolder].
         </p>
       </div>
       <div class="project_box">
-        <img />
-
+        <iframe
+            src="https://Where-am-I-going.joffrey-lou.repl.co"
+            frameborder="0"
+            height="400px"
+            width="800px"
+          ></iframe>
         <h3>Description</h3>
       </div>
     </section>
