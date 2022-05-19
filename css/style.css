@@ -93,7 +93,7 @@
 
 .nav {  
   width: 80%;
-  height: 4%;
+  height: 6%;
 
   position: fixed;
   top: 0;
@@ -139,7 +139,7 @@
 .design_selector {
   font-size: 0.5vw;
   width: 8%;
-  height: 7.55%;
+  height: 6%;
 
   position: fixed;
   top: 0;
@@ -480,3 +480,8 @@ border-radius: 15%;
   100%{ border-color:magenta;}
 }
 
+/* pdf page */
+
+.pdf_viewer{
+  margin: 0%;
+}
