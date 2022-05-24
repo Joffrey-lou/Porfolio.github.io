@@ -13,9 +13,9 @@ window.addEventListener("scroll", (event) => {
     position = 1;
   } else if (scroll <= 2000) {
     position = 2;
-  } else if (scroll <= 2600) {
+  } else if (scroll <= 2500) {
     position = 3;
-  } else if (scroll <= 2700) {
+  } else if (scroll <= 2600) {
     position = 4;
   }
   Define(position);
