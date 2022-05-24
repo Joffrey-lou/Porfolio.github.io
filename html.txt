@@ -1,41 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
+    <title>Porfolio Web</title>
     <link rel="icon" href="img/icon/Logo.gif" type="image/icon type" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/font/stylesheet.css" />
-    <title>Porfolio Web</title>
-    <script src="javascrypt.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/javascript.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
   </head>
-  <body>
-    <!-- NAV RIGHT -->
-    <section class="nav_right">
-      <ul>
-        <li>
-          <a id="hm" href="#home"> Home </a>
-        </li>
-        <li>
-          <a id="cp" href="#competence"> Competence</a>
-        </li>
-        <li>
-          <a id="p1" href="#project_1"> Project 1 </a>
-        </li>
-        <li>
-          <a id="p2" href="#project_2"> Project 2 </a>
-        </li>
-        <li>
-          <a id="co" href="#contact"> Contact </a>
-        </li>
-          <a href="showpdf.html">
-            <img src="img/icon/pdf_download_button.gif" />
-          </a>
-      </ul>
+
+
+  <header>
+
+    <!-- CV LINK -->
+    
+      <!-- NAV -->
+    <section class="nav">
+  <ul>
+    <li>
+      <a id="hm" onclick="window.scrollTo(0,0)"> Home </a>
+    </li>
+    <li>
+      <a id="cp" onclick="window.scrollTo(0,800)"> Competence</a>
+    </li>
+    <li>
+      <a id="p1" onclick="window.scrollTo(0,1500)"> Project 1 </a>
+    </li>
+    <li>
+      <a id="p2" onclick="window.scrollTo(0,2200)"> Project 2 </a>
+    </li>
+    <li>
+      <a id="co" onclick="window.scrollTo(0,2700)"> Contact </a>
+    </li>
+    <li id="google_translate_element">
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'fr'}, 'google_translate_element');
+        }
+        </script>
+    </li>
+  </ul>
     </section>
 
-    <!----NAV LEFT -->
-    <section class="nav_left">
+    <!-- Contact Form Link -->
+    <section class="contact_form"> 
+      <a href="page/contact.html">  Send me a Email here </a>
+    </section>
+
+    <!----DESIGN SELECTOR -->
+    <section class="design_selector" id="slide">
       <h2>Design Selector</h2>
       <ul>
         <li>
@@ -50,32 +65,29 @@
         <li>
           <input type="image" onclick="design_3()" src="img/background/background_3.jpg" />
         </li>
-      </ul>
+      </ul> 
     </section>
+
+  </header>
+  <body>
 
     <!-- SECTION HOME -->
     <section class="home" id="home">
-      <div class="statue">
-        <h3>Étudiant en technique informatique</h3>
-        <ul>
-          <li>
-            <p class="statue_p">Competence</p>
-            <img src="img/icon/css.png" />
-          </li>
-          <li>
-            <p class="statue_p">Competence</p>
-            <img src="img/icon/html.png" />
-          </li>
-          <li>
-            <p class="statue_p">Competence</p>
-            <img src="img/icon/c++.png" />
-          </li>
-        </ul>
-      </div>
       <div class="profile">
         <img src="img/profile_picture.png" class="center" />
         <p>Joffrey-Lou Gingras</p>
       </div>
+      <div class="statue">
+        <h3>Étudiant en technique informatique</h3>
+        <grid>
+          <h2> Experience </h2>
+          <p>Travail depuis 2018 au canyon des portes de l'enfer en tant que préposé a l'accueille, ce qui m'apporte une facilité avec les clients en grand nombre.</p>
+          <h2> Eductation </h2>
+          <p> Diplôme d'études secondaires obtenue en 2021 et commencement de la technique informatique au cégep de Rimouski en automne 2021.</p>
+          <h2> Other </h2>  
+          <p>Développement indépendant d'un jeu en javacript sur la plate-forme <a style="color: yellow" href="https://replit.com/@Joffrey-lou"> Replit</a>, dans mes temps libres.</p>
+       </div>
+    </grid>
     </section>
 
     <!-- SECTION COMPETENCE -->
@@ -87,7 +99,7 @@
           <li>
             <p>HTML</p>
             <separator></separator>
-            <p>Lorem Ipsulum</p>
+            <p>Javascript</p>
           </li>
           <li>
             <p>CSS</p>
@@ -127,19 +139,19 @@
         <h3>Logiciel</h3>
         <ul>
           <li>
-            <p>Visual Studio</p>
+            <p>VS code</p>
             <separator></separator>
-            <p>Lorem Ipsulum</p>
+            <p>Visual Studio</p>
           </li>
           <li>
             <p>Github</p>
             <separator></separator>
-            <p>Lorem Ipsulum</p>
+            <p>Unity</p>
           </li>
           <li>
             <p>Sublime-Text</p>
             <separator></separator>
-            <p>Lorem Ipsulum</p>
+            <p>Photoshop</p>
           </li>
         </ul>
       </div>
@@ -209,13 +221,12 @@
 
       <!-- SECTION PROJECT 1 -->
     </section>
-    <section class="project" id="project_1">
+    <section class="project project_1">
       <div class="project_description">
         <h3>Porfolio Web</h3>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
-          cumque quo optio aut, commodi unde eius numquam fuga itaque voluptas
-          soluta voluptate nemo et quclassem! Vitae quis minima modi unde?
+          Débuter lors de ma 2e session au cégep de rimouski en temp que project intégrateur, le site web dans lequel vous 
+          naviguez actuellement à été concue e 3 étapes distinctes, le wireframe, le prototype et le résultat finale.
         </p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
@@ -240,7 +251,7 @@
             id="code"
             src="html.txt"
             frameborder="0"
-            height="400"
+            height="400px"
             width="95%"
             style="background-color: rgba(179, 179, 179, 0.397)"
           ></iframe>
@@ -250,78 +261,90 @@
     </section>
 
     <!-- SECTION PROJECT 2 -->
-    <section class="project" id="project_2">
+    <section class="project project_2">
       <div class="project_description">
-        <h3>Project Name</h3>
+        <h3>Where am I going?</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quasi,
-          ipsa, velit minima quis consequatur suscipit reiciendis sequi,
-          eligendi iste ullam minus odit incclassunt magnam possimus et
-          molestiae exercitationem! Deleniti.
+          Débuter le 27 avril 2022, Where am I going est un project personnel développé sur la platforme 
+          <a style="color: yellow" href="https://replit.com/@Joffrey-lou"> Replit.</a>, en javascript,
+           à l'aide de la libraire <a style="color: yellow" href="https://Kaboom.js"> Kaboom</a>.
+          Le project consiste, d'un platformer roguelike oû le joueur incarne un personage dont le
+          seul moyen de locomotion est un ressort. Il ne pourras donc, se diriger que lorsqu'il se situe dans les air.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
-          pariatur! Autem sit a facilis doloribus accusantium, voluptatum
-          consectetur vero! Aperiam mollitia commodi sequi rem consequatur
-          explicabo est minus. Modi, enim?
+          Le project â été conceptualiser amis sur la platforme 
+          <a style="color: yellow" href="https://miro.com/app/board/uXjVO3NNQjQ=/?share_link_id=347656176074"> Miro</a>
+          . Le script, lui, a été créez par moi même et un amis, en se basant sur la documentation Kaboom. J'ai concu les musiques sur
+          <a style="color: yellow" href="https://musiclab.chromeexperiments.com/Song-Maker/"> Musiclab</a>, et les effets sonores
+          obtenu sur <a style="color: yellow" href="https://opengameart.org"> OpenGameArt</a>.
         </p>
       </div>
       <div class="project_box">
-        <img />
-
+        <iframe
+            src="https://Where-am-I-going.joffrey-lou.repl.co"
+            frameborder="0"
+            height="80%"
+            width="95%"
+          ></iframe>
         <h3>Description</h3>
       </div>
     </section>
 
-    <!-- SECTION CONTACT -->
-    <section class="contact" id="contact">
+  </body>
+
+  <footer>
+
+     <!-- SECTION CONTACT -->
+     <section class="contact" id="contact">
       <!-- SOCIAL 1 -->
       <div>
-        <form
-          action="https://www.facebook.com/people/Joffrey-lou-Gingras/100011561556361/"
+        <a
+          href="https://www.facebook.com/people/Joffrey-lou-Gingras/100011561556361/"
         >
           <input type="submit" value="Joffrey-lou Gingras" />
-        </form>
+      </a>
         <img src="img/contact/facebook.png" />
       </div>
       <!-- SOCIAL 2 -->
       <div>
-        <form action="https://twitter.com/GingrasLou">
+        <a href="https://twitter.com/GingrasLou">
           <input type="submit" value="@GingrasLou" />
-        </form>
+        </a>
         <img src="img/contact/twitter.png" />
       </div>
       <!-- SOCIAL 3 -->
       <div>
-        <form action="https://www.instagram.com/joffrey_lou_gingras/">
+        <a href="https://www.instagram.com/joffrey_lou_gingras/">
           <input type="submit" value="joffrey_lou_gingras" />
-        </form>
+        </a>
         <img src="img/contact/instagram.png" />
       </div>
       <!-- SOCIAL 4 -->
       <div>
-        <form action="https://twitter.com/GingrasLou">
+        <a href="mailto:gingras.joffreylou.professionnel@gmail.com">
           <input
             type="submit"
             value="gingras.joffreylou.professionnel@gmail.com"
           />
-        </form>
+        </a>
         <img src="img/contact/gmail.png" />
       </div>
       <!-- SOCIAL 5 -->
       <div>
-        <form action="https://github.com/Joffrey-lou">
+        <a href="https://github.com/Joffrey-lou">
           <input type="submit" value="https://github.com/Joffrey-lou" />
-        </form>
+        </a>
         <img src="img/contact/GitHub.png" />
       </div>
       <!-- SOCIAL 6 -->
       <div>
-        <form action="https://www.linkedin.com/in/joffrey-lou-gingras-371a6a238/">
-          <input type="submit" value="Joffrey-Lou Gingras" />
-        </form>
+        <a href="https://www.linkedin.com/in/joffrey-lou-gingras-371a6a238/">
+          <input  type="submit" value="Joffrey-Lou Gingras" />
+        </a>
         <img src="img/contact/linkedin.png" />
       </div>
     </section>
-  </body>
+
+  </footer>
+
 </html>
